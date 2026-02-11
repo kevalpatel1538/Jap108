@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jap108</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">Jap108</h1>
+    <p class="tagline">108 Steps Closer to Peace</p>
+
+    <!-- JAP PAGE -->
+    <div id="japPage">
+
+        <h2 id="currentMantra">Ram Ram</h2>
+        <p id="mantraDisplay"></p>
+
+        <div class="counter-circle" id="counter">
+            <div class="progress-circle">
+                <span id="count">0</span>
+            </div>
+        </div>
+
+        <div class="mantra-buttons">
+            <button class="active">Ram Ram</button>
+            <button>Radhe Radhe</button>
+            <button>Har Har Mahadev</button>
+        </div>
+
+        <button class="reset-btn">Reset</button>
+    </div>
+
+    <!-- STREAK PAGE -->
+    <div id="streakPage" style="display:none;">
+        <h2>Your Streak 🔥</h2>
+        <p id="streakCount">0 Days</p>
+    </div>
+    <!-- Premium Popup -->
+<div id="completionPopup" class="popup">
+    <div class="popup-content">
+        <h2>108 Complete 🙏</h2>
+        <p>May peace and positivity fill your heart ✨</p>
+        <button onclick="closePopup()">Continue</button>
+    </div>
+</div>
+
+
+    <!-- HISTORY PAGE -->
+    <div id="historyPage" style="display:none;">
+        <h2>History 📊</h2>
+        <ul id="historyList"></ul>
+    </div>
+
+</div>
+
+<!-- Bottom Navigation -->
+<div class="bottom-nav">
+    <button onclick="showPage('jap')">Jap</button>
+    <button onclick="showPage('streak')">Streak</button>
+    <button onclick="showPage('history')">History</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
